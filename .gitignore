@@ -35,7 +35,7 @@ build/
 darksagad
 darksaga-qt
 Makefile
-src/leveldb
+#src/leveldb
 src/qt/locale
 src/secp256k1/build-aux
 *.patch
