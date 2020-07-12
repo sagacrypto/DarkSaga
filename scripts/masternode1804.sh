@@ -272,14 +272,14 @@ function important_information() {
  echo -e "${GREEN}VPS_IP:${NC}${GREEN}$NODEIP:$COIN_PORT${NC}"
  echo -e "${GREEN}MASTERNODE GENKEY is:${NC}${PURPLE}$COINKEY${NC}"
  echo -e "${BLUE}================================================================================================================================"
- echo -e "${CYAN}Join Discord to Stay Updated"
+ echo -e "${CYAN}Join Discord or Telegram to Stay Updated"
  echo -e "${BLUE}================================================================================================================================${NC}"
  #echo -e "${CYAN}Ensure Node is fully SYNCED with BLOCKCHAIN.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${GREEN}Daemon info:${NC}"
  echo -e "${GREEN} cd /usr/local/bin/${NC}"
  echo -e "${GREEN} ./darksagad getinfo${NC}"
- 
+
  }
 
 function setup_node() {
