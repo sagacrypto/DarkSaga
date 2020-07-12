@@ -12,10 +12,10 @@ ___
 Download latest wallet: [GitHub](https://github.com/sagacrypto/DarkSaga/releases)  
 
 Open the wallet
- 
+
  *Note: If you're setting up using an Ubuntu desktop wallet and you do not see the File, Settings, or Help wallet menu options then you must uninstall apppmenu-qt5 from your system (Terminal> sudo apt-get remove appmenu-qt5)*
 
-Go to the `Receive` tab 
+Go to the `Receive` tab
 
 ![walletsetup1](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/Images/Receive.PNG	)
 
@@ -33,13 +33,13 @@ Go to the `Send` tab
 
 ![walletsetup2](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/Images/Send.png)
 
-*Use "Coin Control" to select your collateral. If Coin Control is not visible, enable by navigating to menu >Options>Display* 
+*Use "Coin Control" to select your collateral. If Coin Control is not visible, enable by navigating to menu >Options>Display*
 
 Paste the address on the `Pay To` box and enter 2500 in the `Amount` box  
 
 *Note : You must be sent exactly 2500 SAGA in a single transaction*  
- 
-Click `Send` *(do not check `Darksend`)* 
+
+Click `Send` *(do not check `Darksend`)*
 
 Go to `Help` > `Debug window`  
 
@@ -59,24 +59,24 @@ Login to your instance using your SSH Client
 
 #### 3-1. Installation  
 
-Paste the applicable command below into your terminal to run the automated masternode installation script. 
-*these scripts automatically install the daemon and a bootstrap; therefore, they will take some time to run. Please be patient.* 
+Paste the applicable command below into your terminal to run the automated masternode installation script.
+*these scripts automatically install the daemon and a bootstrap; therefore, they will take some time to run. Please be patient.*
 
 Ubuntu 16.04 VPS:
 ```
-wget -q https://github.com/sagacrypto/DarkSaga/blob/master/scripts/masternode1604.sh
+wget -q https://github.com/sagacrypto/DarkSaga/releases/download/3.0/masternode1604.sh
 bash masternode1604.sh
 ```  
 
 Ubuntu 18.04 VPS:
 ```
-wget -q https://github.com/sagacrypto/DarkSaga/blob/master/scripts/masternode1804.sh
+wget -q https://github.com/sagacrypto/DarkSaga/releases/download/3.0/masternode1804.sh
 bash masternode1804.sh
 ```  
 Paste your masternode genkey when prompted
 ___
 ### 4. Setup local wallet part 2 of 2  
- 
+
 After 15 confirmations type `masternode outputs` in the `Debug window`
 
 ![outputs1](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/Images/genkey.PNG)  
@@ -93,19 +93,19 @@ Click the `Create...` button
 Fill in the form using the information recorded in your text editor from previous steps
 
 Click `OK`  
- 
+
 Click `Update`  
 
 Select your masternode
 Click `Start`  
 
-*Note: If you receive an error such as "Could not allocate VIN", unlock your wallet and click `Start` again.* 
+*Note: If you receive an error such as "Could not allocate VIN", unlock your wallet and click `Start` again.*
 *If the error reoccurs then you may need to reinstall your VPS, remove the masternode (see below) from your masternode.conf file, and begin the setup from the beginning*
 
-The above steps will create a 'masternode.conf' file in your %appdata% folder (windows). 
-Masternodes can be removed by editing or deleting file. Your collateral will reappear after you restart your wallet. 
+The above steps will create a 'masternode.conf' file in your %appdata% folder (windows).
+Masternodes can be removed by editing or deleting file. Your collateral will reappear after you restart your wallet.
 
-You may need to wait a few hours or even a day to receive rewards depending on the number of masternodes on the network. 
+You may need to wait a few hours or even a day to receive rewards depending on the number of masternodes on the network.
 ___
 ### 6. Checking masternode status  
 Click `Update` periodically to ensure your masternodes are running
