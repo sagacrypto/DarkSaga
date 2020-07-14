@@ -9,8 +9,8 @@ DarkSaga (SAGA) is a PoS/PoW Masternode based cryptocurrency
 * Port: 62620
 * RPCport: 62720
 * Block Rewards
-	* &lt; 944,600 6 Saga per block (2 PoW, 2 PoS, 2 Masternodes)
-	* &lt; PoW, 3 SAGA per block (1 PoS, 1 Pos, 1 Masternodes)
+	* &lt; 1,043,122 6 Saga per block (2 PoW, 2 PoS, 2 Masternodes)
+	* &gt; 1,043,122 3 SAGA per block (1 PoS, 1 Pos, 1 Masternodes)
 * Masternode collateral: 2500 SAGA
 * Minimum Stake Age: 8 hours
 	
