@@ -22,6 +22,6 @@ DarkSaga (SAGA) is a PoS/PoW Masternode based cryptocurrency
 
 ***
 
-#### Join us on [Telegram](https://t.me/sagacoinofficial) and [Discord](https://discord.gg/SJBptGC). Visit our [Website](https://www.sagacoin.net/) or you can find us on [Twitter](https://twitter.com/Saga_Coin)
+#### Join us on [Telegram](https://t.me/sagacoinofficial) and [Discord](https://discord.gg/SJBptGC). Visit our [Website](http://darksaga.online/) or you can find us on [Twitter](https://twitter.com/Saga_Coin)
 
 ***
