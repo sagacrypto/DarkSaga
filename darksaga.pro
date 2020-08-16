@@ -64,10 +64,10 @@ UI_DIR = build
 # use: qmake "RELEASE=1"
 contains(RELEASE, 1) {
     # Mac: compile for maximum compatibility (10.5, 32-bit)
-    macx:QMAKE_CXXFLAGS += -stdlib=libc++ -mmacosx-version-min=10.9 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.9 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-    macx:QMAKE_LFLAGS += -stdlib=libc++ -mmacosx-version-min=10.9 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
-    macx:QMAKE_OBJECTIVE_CFLAGS += -mmacosx-version-min=10.9 -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk
+    macx:QMAKE_CXXFLAGS += -stdlib=libc++ -mmacosx-version-min=10.9 -arch x86_64 -isysroot /Applications/Xcode9.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk
+    macx:QMAKE_CFLAGS += -mmacosx-version-min=10.9 -arch x86_64 -isysroot /Applications/Xcode9.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk
+    macx:QMAKE_LFLAGS += -stdlib=libc++ -mmacosx-version-min=10.9 -arch x86_64 -isysroot /Applications/Xcode9.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk
+    macx:QMAKE_OBJECTIVE_CFLAGS += -mmacosx-version-min=10.9 -arch x86_64 -isysroot /Applications/Xcode9.2.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk
 
 
     !windows:!macx {
@@ -513,7 +513,7 @@ isEmpty(BOOST_THREAD_LIB_SUFFIX) {
 }
 
 isEmpty(BDB_LIB_PATH) {
-    macx:BDB_LIB_PATH = $$system(brew --prefix berkeley-db@4)/lib
+    macx:BDB_LIB_PATH = /usr/local/opt/berkeley-db@4/lib
     #windows:BDB_LIB_PATH=C:/dev/coindeps32/bdb-4.8/lib
 }
 
@@ -522,26 +522,26 @@ isEmpty(BDB_LIB_SUFFIX) {
 }
 
 isEmpty(BDB_INCLUDE_PATH) {
-    macx:BDB_INCLUDE_PATH = $$system(brew --prefix berkeley-db@4)/include
+    macx:BDB_INCLUDE_PATH = /usr/local/opt/berkeley-db@4/include
     #windows:BDB_INCLUDE_PATH=C:/dev/coindeps32/bdb-4.8/include
 }
 
 isEmpty(BOOST_LIB_PATH) {
-    macx:BOOST_LIB_PATH = $$system(brew --prefix boost@1.57)/lib
+    macx:BOOST_LIB_PATH = /usr/local/opt/boost@1.57/lib
     #windows:BOOST_LIB_PATH=C:/dev/coindeps32/boost_1_57_0/lib
 }
 
 isEmpty(BOOST_INCLUDE_PATH) {
-    macx:BOOST_INCLUDE_PATH = $$system(brew --prefix boost@1.57)/include
+    macx:BOOST_INCLUDE_PATH = /usr/local/opt/boost@1.57/include
     #windows:BOOST_INCLUDE_PATH=C:/dev/coindeps32/boost_1_57_0/include
 }
 
 isEmpty(QRENCODE_LIB_PATH) {
-    macx:QRENCODE_LIB_PATH = $$system(brew --prefix qrencode)/lib
+    macx:QRENCODE_LIB_PATH = /usr/local/opt/qrencode/lib
 }
 
 isEmpty(QRENCODE_INCLUDE_PATH) {
-    macx:QRENCODE_INCLUDE_PATH = $$system(brew --prefix qrencode)/include
+    macx:QRENCODE_INCLUDE_PATH = /usr/local/opt/qrencode/include
 }
 
 isEmpty(MINIUPNPC_LIB_SUFFIX) {
@@ -549,22 +549,22 @@ isEmpty(MINIUPNPC_LIB_SUFFIX) {
 }
 
 isEmpty(MINIUPNPC_INCLUDE_PATH) {
-    macx:MINIUPNPC_INCLUDE_PATH=$$system(brew --prefix miniupnpc)/include
+    macx:MINIUPNPC_INCLUDE_PATH= /usr/local/opt/miniupnpc/include
    # windows:MINIUPNPC_INCLUDE_PATH=C:/dev/coindeps32/miniupnpc-1.9
 }
 
 isEmpty(MINIUPNPC_LIB_PATH) {
-    macx:MINIUPNPC_LIB_PATH=$$system(brew --prefix miniupnpc)/lib
+    macx:MINIUPNPC_LIB_PATH= /usr/local/opt/miniupnpc/lib
    # windows:MINIUPNPC_LIB_PATH=C:/dev/coindeps32/miniupnpc-1.9
 }
 
 isEmpty(OPENSSL_INCLUDE_PATH) {
-    macx:OPENSSL_INCLUDE_PATH = $$system(brew --prefix openssl)/include
+    macx:OPENSSL_INCLUDE_PATH = /usr/local/opt/openssl/include
    # windows:OPENSSL_INCLUDE_PATH=C:/dev/coindeps32/openssl-1.0.1j/include
 }
 
 isEmpty(OPENSSL_LIB_PATH) {
-    macx:OPENSSL_LIB_PATH = $$system(brew --prefix openssl)/lib
+    macx:OPENSSL_LIB_PATH = /usr/local/opt/openssl/lib
     #windows:OPENSSL_LIB_PATH=C:/dev/coindeps32/openssl-1.0.1j/lib
 }
 
