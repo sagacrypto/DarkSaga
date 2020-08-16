@@ -42,6 +42,7 @@ To install, first follow the instructions to install dependencies for 16.04 or 1
     sudo apt-get install libgmp3-dev
   	sudo apt-get install libdb5.3++ unzip libzmq5 -y
 
+## Compilation (Ubuntu 16.04 and Ubuntu 18.04)
 #### Firewall
     sudo ufw limit ssh/tcp  
     sudo ufw allow 62620/tcp  
