@@ -1133,6 +1133,12 @@ const boost::filesystem::path &GetDataDir(bool fNetSpecific)
     return path;
 }
 
+static void WriteConfigFile(FILE* configFile)    //append darksaga.conf
+{
+    fputs ("litemode=1\n", configFile);
+    fclose(configFile);
+}
+
 void ClearDatadirCache()
 {
     std::fill(&pathCached[0], &pathCached[CChainParams::MAX_NETWORK_TYPES+1],
@@ -1158,11 +1164,11 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()){
-        // Create empty darksilk.conf if it does not excist
+        // Create empty darksaga.conf if it doesn't exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
-        if (configFile != NULL)
-            fclose(configFile);
-        return; // Nothing to read, so just return
+        if (configFile != NULL){
+           WriteConfigFile(configFile);
+        }
     }
 
     set<string> setOptions;
@@ -1170,7 +1176,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override bitcoin.conf
+        // Don't overwrite existing settings so command line settings override darksaga.conf
         string strKey = string("-") + it->string_key;
         if (mapSettingsRet.count(strKey) == 0)
         {
