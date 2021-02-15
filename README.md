@@ -4,13 +4,13 @@ DarkSaga (SAGA) is a PoS/PoW Masternode based cryptocurrency
 
 * Algorithm: Scrypt
 * Max Supply: 42,000,000
-* Spacing: 2.5 Minutes
+* Spacing: 1 Minute (2 minutes PoS/MN, 2 minutes PoW)
 * 10 Minute Confirmation Time 
 * Port: 62620
 * RPCport: 62720
 * Block Rewards
-	* &lt; 1,043,122 6 Saga per block (2 PoW, 2 PoS, 2 Masternodes)
-	* &gt; 1,043,122 3 SAGA per block (1 PoS, 1 Pos, 1 Masternodes)
+	* &lt; 1,043,122 2 PoW, 2 PoS, 2 Masternodes (6 average per 2 blocks)
+	* &gt; 1,043,122 1 PoW, 1 PoS, 1 Masternodes (3 average per 2 blocks)
 * Masternode collateral: 2500 SAGA
 * Minimum Stake Age: 8 hours
 	
