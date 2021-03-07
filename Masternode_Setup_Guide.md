@@ -17,11 +17,11 @@ Open the wallet
 
 Go to the `Receive` tab
 
-![walletsetup1](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/Images/Receive.PNG	)
+![walletsetup1](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/images%20and%20docs/Receive.PNG	)
 
 Click `New Address` and enter a Masternode Address name (e.g. MN01) and click `OK` *(do not check `Stealth Address`)*  
 
-![walletsetup2](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/Images/New%20Address.png)
+![walletsetup2](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/images%20and%20docs/New%20Address.png)
 
 Select the Masternode Address and click `Copy Address`. Paste the address in a text editor  
 
@@ -31,7 +31,7 @@ Select the Reward Address and click `Copy Address`. Paste the address in a text 
 
 Go to the `Send` tab
 
-![walletsetup2](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/Images/Send.png)
+![walletsetup2](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/images%20and%20docs/Send.png)
 
 *Use "Coin Control" to select your collateral. If Coin Control is not visible, enable by navigating to menu >Options>Display*
 
@@ -45,7 +45,7 @@ Go to `Help` > `Debug window`
 
 Open `Console`and type `masternode genkey`
 
-![walletsetup6](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/Images/genkey.PNG)
+![walletsetup6](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/images%20and%20docs/genkey.PNG)
 
 Copy the key and paste the masternode genkey (also referred later as a "PrivKey" or "Masternode Private Key") into your text editor  
 
@@ -79,7 +79,7 @@ ___
 
 After 15 confirmations type `masternode outputs` in the `Debug window`
 
-![outputs1](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/Images/genkey.PNG)  
+![outputs1](https://raw.githubusercontent.com/sagacrypto/DarkSaga/master/images%20and%20docs/genkey.PNG)  
 
 Copy the TxHash and output index number and paste it into your text editor
 
